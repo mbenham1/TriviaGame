@@ -23,14 +23,14 @@ var answers = function () {
     }
 }
 
-function decrement() {
-    timeCount--;
-    $("#timer").text(timeCount);
-    if (timeCount <= 0) {
-        clearInterval(timeCount1);
-        answers();
-    }
-}
+// function decrement() {
+//     timeCount--;
+//     $("#timer").text(timeCount);
+//     if (timeCount <= 0) {
+//         clearInterval(timeCount1);
+//         answers();
+//     }
+// }
 
 var start = function () {
     $("#all").hide();
@@ -40,6 +40,14 @@ var start = function () {
     document.onkeyup = function () {
         var spaceBar = event.charCode || event.keyCode;
         if (spaceBar === 32) {
+            function decrement() {
+                timeCount--;
+                $("#timer").text(timeCount);
+                if (timeCount <= 0) {
+                    clearInterval(timeCount1);
+                    answers();
+                }
+            }
             timeCount1 = setInterval(decrement, 1000);
             $("#all").show();
             $("#press").hide();
