@@ -17,3 +17,9 @@ body {
     text-align: center;
     font-size: 25px;
 }
+
+img {
+    height: 350px;
+    width: 70%;
+    padding-top: 50px;
+}

@@ -1,4 +1,5 @@
 var timeCount = 15;
+var timeCount1;
 var correctAnswers = ["Reed", "Jack", "Augusta", "1934"];
 var wins = 0;
 var losses = 0;
@@ -42,6 +43,7 @@ var start = function () {
             timeCount1 = setInterval(decrement, 1000);
             $("#all").show();
             $("#press").hide();
+            $("img").hide();
             timeCount = 15;
             $("#timer").text(timeCount);
             $("#results").hide();
