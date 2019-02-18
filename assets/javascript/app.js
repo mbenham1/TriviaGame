@@ -44,10 +44,11 @@ var start = function () {
     $("#all").hide();
     $("#results").hide();
     $("#press").html("Press Spacebar to Start");
-
+    
     document.onkeyup = function () {
         var spaceBar = event.charCode || event.keyCode;
         if (spaceBar === 32) {
+            clearInterval(timeCount1);
             timeCount1 = setInterval(decrement, 1000);
             $("#all").show();
             $("#press").hide();
