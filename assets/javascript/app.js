@@ -45,6 +45,10 @@ var start = function () {
             timeCount = 15;
             $("#timer").text(timeCount);
             $("#results").hide();
+            wins = 0;
+            losses = 0;
+            $("#correct").html(wins);
+            $("#incorrect").html(losses);
         }
     }
 };
