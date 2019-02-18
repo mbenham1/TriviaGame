@@ -23,11 +23,11 @@ var answers = function () {
     }
     var par = -(wins - losses);
     if (par > 0) {
-        $("#topar").html("+" + par);
+        $("#topar").html("+" + par).css({"color": "black"});
     } else {
-        $("#topar").html(par);
+        $("#topar").html(par).css({"color": "red"});
     } if (par === 0) {
-        $("#topar").html("EVEN");
+        $("#topar").html("EVEN").css({"color": "yellow"});
     }
 }
 
