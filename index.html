@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Masters Trivia</h1>
+        <h2>Time Remaining: <span id="timer">15</span></h2>
+        <div id="press">Press Spacebar to Start</div>
+        <div id="all">
+            <div id="questions">
+                <form action="">
+                    <label class="question-head">Who won last year's Masters Tournament?</label><br>
+                    <input type="radio" name="question1" value="Reed">Patrick Reed
+                    <input type="radio" name="question1" value="Fowler">Rickie Fowler
+                    <input type="radio" name="question1" value="Spieth">Jordan Spieth
+                    <input type="radio" name="question1" value="Rahm">Jon Rahm
+                </form>
+            </div>
+            <div id="questions">
+                <form action="">
+                    <br><br><label class="question-head">Which golfer has won the most Green Jackets?</label><br>
+                    <input type="radio" name="question2" value="Tiger">Tiger Woods
+                    <input type="radio" name="question2" value="Phil">Phil Mickelson
+                    <input type="radio" name="question2" value="Jack">Jack Nicklaus
+                    <input type="radio" name="question2" value="Nick">Sir Nick Faldo
+                </form>
+            </div>
+            <div id="questions">
+                <form action="">
+                    <br><br><label class="question-head">Which course hosts the Masters Tournament?</label><br>
+                    <input type="radio" name="question3" value="Augusta">Augusta National
+                    <input type="radio" name="question3" value="Quail">Quail Hollow
+                    <input type="radio" name="question3" value="TPC">TPC Sawgrass
+                    <input type="radio" name="question3" value="Atlanta">Atlanta Athletic
+                </form>
+            </div>
+            <div id="questions">
+                <form action="">
+                    <br><br><label class="question-head">When was the first Masters played?</label><br>
+                    <input type="radio" name="question4" value="1931">1931
+                    <input type="radio" name="question4" value="1932">1932
+                    <input type="radio" name="question4" value="1933">1933
+                    <input type="radio" name="question4" value="1934">1934
+                </form>
+            </div>
+        </div>
+        <div id="results">
+            <h1>Correct: </h1><span id="correct">0</span></h1>
+            <h1>Incorrect: </h1><span id="incorrect">0</span></h1>
+            <h1 style="color: white">Press Spacebar to play again</h1>
+        </div>
+
+    </div>
+    </div>
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>

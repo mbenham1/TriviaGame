@@ -1,0 +1,19 @@
+
+body {
+    background-image: url("../images/augusta1.jpg");
+    margin: 0 auto;
+    /* padding-top: 100px; */
+    font-family: 'Muli', sans-serif;
+}
+
+#container {
+    background-color: green;
+    height: 100vh;
+    min-height: 100%;
+    width: 760px;
+    margin: 0 auto;
+    padding-top: 50px;
+    color: yellow;
+    text-align: center;
+    font-size: 25px;
+}
