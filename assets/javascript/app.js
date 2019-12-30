@@ -48,6 +48,7 @@ var start = function () {
     document.onkeyup = function () {
         var spaceBar = event.charCode || event.keyCode;
         if (spaceBar === 32) {
+            $("input[type=radio]").prop("checked", false);
             clearInterval(timeCount1);
             timeCount1 = setInterval(decrement, 1000);
             $("#all").show();
@@ -65,7 +66,3 @@ var start = function () {
 };
 
 start();
-
-// Timer increases when Spacebar is clicked and doesn't stop
-// Clearing the results from the previous answers
-// Too much "hard code" and easily unraveled, not continuous
